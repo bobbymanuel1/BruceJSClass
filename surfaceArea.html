@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surface Area of a Triangle</title>
+    <script src="surfaceArea.js"></script>
+    <script src="common.js"></script>
+  </head>
+  <body>
+    <hr />
+    <p>Getting the surface area of a triangle</p>
+    <!--input-->
+    Base:<input id="inputBase" /> Height:<input id="inputHeight" />
+
+    <!--process-->
+    <button
+      id="btnSurfaceArea"
+      onclick="
+      showOutput('parSurfaceArea',
+      calcSurfaceArea(
+       getInput('inputBase'),//Base
+      getInput('inputHeight')//Height
+      )
+    )"
+    >
+      Calculate
+    </button>
+
+    <!--output-->
+    <p id="parSurfaceArea">This ıs the output</p>
+  </body>
+</html>
